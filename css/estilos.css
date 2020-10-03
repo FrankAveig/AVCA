@@ -176,11 +176,10 @@ main .aboutUs .contenedorAboutUs h2{
 main .aboutUs .contenedorAboutUs p{
   font-size: 1.8rem;
 }
-main .aboutUs button{
+button{
   font-size: 1.8rem;
   height: 4.5rem;
   width: 15rem;
- 
   border: 2px solid #d9d9d9;
   background: #fff;
   color: #000;
@@ -192,16 +191,144 @@ main .aboutUs button{
 main .enganche{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 63rem;
+  overflow: hidden;
 }
 main .enganche .contenedorTextoE{
   height: 100%;
   width: 100%;
   background-color: #38d2d9;
+  display: flex;
+}
+main .enganche .contenedorEspacio{
+  width: 73%;
+  color: white;
+  margin: auto;
+}
+main .enganche .contenedorTextoE h2{
+  font-size: 4rem;
+  
+}
+main .enganche .contenedorTextoE p{
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 main .enganche figure{
-  width: 100%;
+  position: relative;
+  z-index: -1;
   margin: 0;
+  width: 166%;
 }
 main .enganche figure img{
   width: 100%;
+  position: relative;
+  bottom: -3px;
+}
+main .servicios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .servicios .contenedorServicios{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  text-align: center;
+  row-gap: 4rem;
+  width: 90%;
+  margin: auto;
+}
+
+main .servicio{
+  width: 80%;
+  margin: auto;
+}
+main .servicios h2{
+  font-size: 4rem;
+  text-align: center;
+}
+main .servicios .contenedorServicios h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+main .servicios .contenedorServicios p{
+  font-size: 1.8rem;
+  color: #808080;
+  font-style: italic;
+}
+main .servicios button{
+  margin: 4rem;
+  border: 1px solid #38d2d9; 
+}
+main .enganche2 figure{
+  grid-column-start: 2;
+}
+main .enganche2 .contenedorTextoE2{
+  grid-column-start: 1;
+  grid-row-start:1 ;
+}
+main .enganche2 .contenedorTextoE2{
+background-color:#f2f2f2;
+color: #2e2f33;
+}
+main .enganche2 .contenedorEspacio2{
+  color: #2e2f33;
+}
+main .parteFinal{
+  background-color: #14b8bf;
+}
+main .parteFinal .contenedorFinal{
+  width: 70%;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+main .parteFinal .contenedorFinal h2{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+main .parteFinal .contenedorFinal p{
+  font-size: 1.8rem;
+}
+main .parteFinal .contenedorFinal a{
+  margin: 0;
+}
+main .parteFinal .contenedorFinal button{
+  border-radius: 20px;
+  border: 1px solid;
+  margin: 0 0 4rem 0;
+  border: unset;
+    color: #14b8bf;
+}
+footer{
+  height: 7.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contenedorLogoHeader{
+display: flex;
+color: black;
+}
+footer .contenedorLogoHeader h1{
+  margin-bottom: 1rem;
+  align-self: flex-end;
+}
+footer figure{
+height: 5.5rem;
+width: 4.2rem;
+margin: 0 0 0 1rem;
+}
+footer figure img{
+  width: 100%;
+}
+footer .redesSociales{
+  display: flex;
+  margin-right: 5rem;
+}
+footer .redesSociales img {
+  width: 4rem;
+  margin: 0 .8rem;
 }
