@@ -55,14 +55,17 @@ header .contenedorLogoHeader h1{
   margin-bottom: 1rem;
   align-self: flex-end;
 }
+header .contenedorLogoHeader img:nth-child(2){
+  height: 60px;
+  margin-top: 14px;
+}
 header figure{
 height: 5.5rem;
 width: 4.2rem;
-margin: 0 0 0 1rem;
+margin: 1rem 0 0 1rem;
 }
-header figure img{
-  width: 100%;
-}
+
+
 header nav{
   margin: 0 1rem;
 }
@@ -145,13 +148,13 @@ width: 80%;
 margin: auto;
 }
 main .caracteristicasAvca .caracteristica1{
-  background-color: #000000;
+  background-color: #fdb813;
 }
 main .caracteristica2{
-  background-color: #38d2d9;
+  background-color: #2262a9;
 }
 main .caracteristica3{
-  background-color: #14b8bf;
+  background-color: #71bf45;
 }
 
 main .aboutUs{
@@ -197,7 +200,7 @@ main .enganche{
 main .enganche .contenedorTextoE{
   height: 100%;
   width: 100%;
-  background-color: #38d2d9;
+  background-color: #fdb813;
   display: flex;
 }
 main .enganche .contenedorEspacio{
@@ -217,12 +220,12 @@ main .enganche figure{
   position: relative;
   z-index: -1;
   margin: 0;
-  width: 166%;
+ 
 }
 main .enganche figure img{
   width: 100%;
   position: relative;
-  bottom: -3px;
+  
 }
 main .servicios{
   display: flex;
@@ -275,7 +278,7 @@ main .enganche2 .contenedorEspacio2{
   color: #2e2f33;
 }
 main .parteFinal{
-  background-color: #14b8bf;
+  background-color: #71bf45;
 }
 main .parteFinal .contenedorFinal{
   width: 70%;
@@ -299,7 +302,7 @@ main .parteFinal .contenedorFinal button{
   border: 1px solid;
   margin: 0 0 4rem 0;
   border: unset;
-    color: #14b8bf;
+    color: #71bf45;
 }
 footer{
   height: 7.5rem;
@@ -321,9 +324,7 @@ height: 5.5rem;
 width: 4.2rem;
 margin: 0 0 0 1rem;
 }
-footer figure img{
-  width: 100%;
-}
+
 footer .redesSociales{
   display: flex;
   margin-right: 5rem;
