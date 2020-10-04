@@ -198,8 +198,11 @@ main .enganche{
   overflow: hidden;
   text-align: justify;
 }
+main .enganche img{
+  height: 674px;
+}
 main .enganche .contenedorTextoE{
-  height: 100%;
+  height: 674px;
   width: 100%;
   background-color: #fdb813;
   display: flex;
@@ -334,4 +337,60 @@ footer .redesSociales{
 footer .redesSociales img {
   width: 4rem;
   margin: 0 .8rem;
+}
+@media screen and (max-width :1347px){
+  main .enganche .contenedorTextoE h2{
+    text-align: left;
+  }
+}
+@media screen and (max-width : 980px){
+  .hero{
+    display: block;
+  }
+  .hero figure{
+    display: none;
+  }
+  .hero h1,h2{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 930px){
+  main .servicios .contenedorServicios{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+@media screen and (max-width: 930px){
+main .enganche{
+  display: block;
+  height: unset;
+}
+main .enganche figure{
+  display: none;
+}
+}
+@media screen and (max-width:800px){
+  main .caracteristicasAvca{
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+  main .caracteristicasAvca .caracteristica{
+    height: 255px;
+  }
+}
+@media screen and (max-width:652px){
+  .hero .contenedorHero h1{
+    font-size: 4.5rem;
+  }
+  main .servicios .contenedorServicios{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:428px){
+  main .enganche .contenedorTextoE{
+    height: unset;
+  }
+  main .enganche .contenedorTextoE h2{
+    font-size: 3rem;
+  }
 }
