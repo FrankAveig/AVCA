@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVCA</title>
+  <link rel="stylesheet" href="./css/contactanos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="navegacion navegacion2">
+    <nav class="menu">
+      <ul>
+        <li><a href="./index.html"> Home</a> </li> 
+        <li><a href="./index.html">Nosotros</a></li>
+        <li><a href="./index.html"> Servicios</a></li>
+        
+      </ul>
+      
+    </nav>
+  </section>
+  </nav>
+  <header>
+    <div class="contenedorLogoHeader">
+      <figure>
+        <img src="./images/logo.png" alt="">
+      </figure>
+      <img src="./images/letraslogo1.png" alt="">
+      <!-- <h1>AVCA</h1> -->
+    </div>
+    
+    <nav>
+      <ul>
+        <li> 
+          <a href="./index.html">home</a>  
+        </li>
+        <li> 
+          <a href="./index.html">Nosotros</a>  
+        </li>
+        <li> 
+          <a href="./index.html">Servicios</a>  
+        </li>
+
+      
+        <!-- <li> 
+        <a href="">Personal</a>  
+        </li> -->
+       
+      </ul>
+    </nav>
+  </header>
+  <i class="icon-menu burger-button"></i>
+  <main class="main">
+    <h1>CONTACTANOS</h1>
+    <section class="formulario">
+      <figure>
+        <img src="./images/hero.png" alt="">
+      </figure>
+      <form action="enviar.php" method="post">
+        <label for="">NOMBRE
+          <input type="text" name="name" id="name" class="name" >
+        </label>
+        <label for="">CORREO
+          <input type="text" name="mail" id="mail" class="email" >
+        </label>
+        <label for="">TELEFONO
+          <input type="text" name="phone" id="subject" class="subject" >
+        </label>
+        <label for="">MENSAJE
+          <textarea name="message" class="message"  id="message"></textarea>
+        </label>
+        <div class="clear"></div>
+        <div class="col-md-8"> 
+          <button type="submit" class="btn btn-primary">ENVIAR </button>
+        </div>
+      </section> 
+      </main>
+  <footer>
+ 
+    <figure>
+      <img src="./images/logo.png" alt="">
+    </figure>
+    <section class="final">
+        <article class="contacto">
+          <h4>Pradera 1 Mz e10 Villa 2</h4>
+          <h4>Ecuador, Guayaquil</h4>
+          <h4>0998567167</h4>
+          <h4>avca@asesoriasavca.com</h4>
+        </article>
+      </section>
+  
+  
+</footer>
+<script>
+  const menu = document.querySelector('.menu');
+  const burgerButton = document.querySelector('.burger-button');
+  burgerButton.addEventListener('click',hideShow);
+  function hideShow(){
+  if (menu.classList.contains('is-active')){
+    menu.classList.remove('is-active');
+  }else{
+  menu.classList.add('is-active');
+  }
+  }
+</script>
+</body>
+</html>

@@ -8,27 +8,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <section class="navegacion navegacion2">
+    <nav class="menu">
+      <ul>
+        <li><a href=""> Home</a> </li> 
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios"> Servicios</a></li>
+        <li><a href="./conocenos.html"> Contactanos</a></li>
+      </ul>
+      
+    </nav>
+  </section>
+  </nav>
   <header>
     <div class="contenedorLogoHeader">
       <figure>
         <img src="./images/logo.png" alt="">
       </figure>
-        <img src="./images/letraslogo1.png" alt="">
+      <img src="./images/letraslogo1.png" alt="">
       <!-- <h1>AVCA</h1> -->
     </div>
+    
     <nav>
       <ul>
         <li> 
-        <a href="">home</a>  
+          <a href="">home</a>  
         </li>
         <li> 
-        <a href="">Nosotros</a>  
+          <a href="#nosotors">Nosotros</a>  
         </li>
         <li> 
-        <a href="#servicios">Servicios</a>  
+          <a href="#servicios">Servicios</a>  
         </li>
+
         <li> 
-        <a href="">Contactanos</a>  
+        <a href="./conocenos.html">Contactanos</a>  
         </li>
         <!-- <li> 
         <a href="">Personal</a>  
@@ -37,6 +51,8 @@
       </ul>
     </nav>
   </header>
+  <i class="icon-menu burger-button"></i>
+  
   <section class="hero">
     <figure>
       <img src="./images/hero.png" alt="">
@@ -68,7 +84,7 @@
     </div>
   </article>
 </section>
-<section class="aboutUs">
+<section class="aboutUs" id="nosotros">
   <div class="contenedorAboutUs">
     <i class="icon-about"></i>
     <h2>Acerca de nosotros</h2>
@@ -118,7 +134,7 @@
       </figure>
       <div class="">
         <h3>Desarrollo Web</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+        <p>Creacion de paginas informativas y e-comerce para tu empresa</p>
       </div>
   
     </article>
@@ -201,7 +217,7 @@
       </div>
     </div>
     </section>
-<section class="parteFinal">
+<section class="parteFinal" id="contactanos">
   <div class="contenedorFinal">
     <h2>¡Conocenos hoy!</h2>
     <p>Nuestro equipo está siempre disponible para atender tus requerimientos</p>
@@ -211,17 +227,36 @@
 </section>
 </main>
 <footer>
-  <div class="contenedorLogoHeader">
+ 
     <figure>
       <img src="./images/logo.png" alt="">
     </figure>
  
-  </div>
+    <section class="final">
+      <article class="contacto">
+        <h4>Pradera 1 Mz e10 Villa 2</h4>
+        <h4>Ecuador, Guayaquil</h4>
+        <h4>0998567167</h4>
+        <h4>avca@asesoriasavca.com</h4>
+      </article>
+    </section>
   <!-- <div class="redesSociales">
     <h2>Siguenos</h2>
     <img src="./images/facebook.png" alt="">
     <img src="./images/instagram.png" alt="">
   </div> -->
 </footer>
+<script>
+  const menu = document.querySelector('.menu');
+  const burgerButton = document.querySelector('.burger-button');
+  burgerButton.addEventListener('click',hideShow);
+  function hideShow(){
+  if (menu.classList.contains('is-active')){
+    menu.classList.remove('is-active');
+  }else{
+  menu.classList.add('is-active');
+  }
+  }
+</script>
 </body>
 </html>
